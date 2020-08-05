@@ -20,6 +20,19 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
             </properties>
         </profile>
     </profiles>
+       
+       <profile>
+            <id>nexus</id>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <url>https://repo.maven.apache.org/maven2/</url>
+                </repository>
+            </repositories>
+                 
     <servers>
         <server>
             <id>nexus</id>
