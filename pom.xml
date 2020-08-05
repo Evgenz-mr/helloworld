@@ -24,10 +24,6 @@
   </properties>
   
   <dependencyManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://192.168.88.226:8081/nexus/repository/maven-snapshots/</url>
-    </snapshotRepository>
     <dependencies>
       <dependency>
         <groupId>com.sun.xml.ws</groupId>
