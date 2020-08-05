@@ -30,8 +30,8 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
                   </snapshots>
 	        <id>nexus-local</id>
 	        <url>http://192.168.88.226:8081/nexus/</url>
-               </repository>
-		
+             </repository>
+	  </repositories>
     </profiles>		
 	
     <servers>
@@ -39,6 +39,14 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
             <id>nexus-local</id>
             <username>admin</username>
             <password>admin</password>
+	    <configuration>
+               <httpHeaders>
+                  <property>
+                     <name>User-Agent</name>
+                     <value>Maven m2Release (java:${java.vm.version} ${env.BUILD_TAG }</value>
+                  </property>
+               </httpHeaders>
+            </configuration>
         </server>
     </servers>
 </settings>
