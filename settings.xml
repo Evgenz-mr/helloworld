@@ -20,20 +20,25 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
             </properties>
         </profile>
     </profiles>
+	
+        <profile>
+	  <id>nexus</id>
+	  <repositories>
+	     <repository>
+                  <snapshots>
+	           <enabled>false</enabled>
+                  </snapshots>
+	        <id>nexus-local</id>
+	        <url>http://192.168.88.226:8081/nexus/</url>
+               </repository>
+		
+    </profiles>		
+	
     <servers>
         <server>
-            <id>nexus</id>
-            <url>http://192.168.88.226:8081/nexus/repository/maven-public/</url>
+            <id>nexus-local</id>
             <username>admin</username>
             <password>admin</password>
-            <configuration>
-               <httpHeaders>
-                  <property>
-                     <name>User-Agent</name>
-                     <value>Maven m2Release (java:${java.vm.version} ${env.BUILD_TAG }</value>
-                  </property>
-               </httpHeaders>
-            </configuration>
         </server>
     </servers>
 </settings>
