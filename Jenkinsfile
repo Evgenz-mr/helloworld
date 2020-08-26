@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     parameters {
-            string(name: 'BRANCH_NAME', defaultValue: "master"),
-            string(name: 'GIT_URL', defaultValue: "https://github.com/Evgenz-mr/helloworld.git"),
-            string(name: 'DOCKER_IMAGE', defaultValue: ""),
-            string(name: 'DOCKER_TAG', defaultValue: ""),
+            string(name: 'BRANCH_NAME', defaultValue: "master")
+            string(name: 'GIT_URL', defaultValue: "https://github.com/Evgenz-mr/helloworld.git")
+            string(name: 'DOCKER_IMAGE', defaultValue: "")
+            string(name: 'DOCKER_TAG', defaultValue: "")
             string(name: 'CRED_GIT', defaultValue: "github")
         }
 
