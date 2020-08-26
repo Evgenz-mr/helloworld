@@ -4,4 +4,4 @@ COPY target/helloworld-1.1.jar /home/app.jar
 
 WORKDIR /home
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "/home/app.jar"]
