@@ -7,7 +7,7 @@ pipeline {
             string(name: 'DOCKER_IMAGE', defaultValue: "")
             string(name: 'DOCKER_TAG', defaultValue: "")
             string(name: 'CRED_GIT', defaultValue: "github")
-        }
+    }
 
     stages {
         stage('Pull code github') {
