@@ -29,7 +29,7 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
 	           <enabled>false</enabled>
                   </snapshots>
 	        <id>nexus-local</id>
-	        <url>http://192.168.88.226:8081/nexus/</url>
+	        <url>http://192.168.88.223:8081/nexus/</url>
              </repository>
 	  </repositories>
     </profiles>		
