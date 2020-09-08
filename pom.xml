@@ -90,7 +90,7 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
-          <appendAssemblyId>true</appendAssemblyId>
+          <appendAssemblyId>false</appendAssemblyId>
           <descriptors>
             <descriptor>assembly.xml</descriptor>
           </descriptors>
