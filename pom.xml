@@ -91,14 +91,8 @@
         <version>3.1.1</version>
         <executions>
           <execution>
-            <id>zip</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
             <configuration>
               <finalName>${project.artifactId}-${project.version}-distrib</finalName>
-              <appendAssemblyId>false</appendAssemblyId>
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
