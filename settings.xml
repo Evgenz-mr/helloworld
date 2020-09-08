@@ -15,38 +15,23 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>http://192.168.88.226/sonar</sonar.host.url>
-                <sonar.login>af7b8831e0bcb53d2e32ba1968bca6497fe2b126</sonar.login>
-                <sonar.project>BPMS</sonar.project>
+                <sonar.login>da2a3cd86980d1b06d2406fc728e4eef3e81b17e</sonar.login>
+                <sonar.projectKey>Demo_SB</sonar.projectKey>
+                <sonar.project>DEMO</sonar.project>
+                <sonar.language>java</sonar.language>
             </properties>
         </profile>
     </profiles>
-	
-        <profile>
-	  <id>nexus</id>
-	  <repositories>
-	     <repository>
-                  <snapshots>
-	           <enabled>false</enabled>
-                  </snapshots>
-	        <id>nexus-local</id>
-	        <url>http://192.168.88.223:8081/nexus/</url>
-             </repository>
-	  </repositories>
-    </profiles>		
-	
     <servers>
         <server>
-            <id>nexus-local</id>
-            <username>admin</username>
-            <password>admin</password>
-	    <configuration>
-               <httpHeaders>
-                  <property>
-                     <name>User-Agent</name>
-                     <value>Maven m2Release (java:${java.vm.version} ${env.BUILD_TAG }</value>
-                  </property>
-               </httpHeaders>
-            </configuration>
+            <id>maven-releases</id>
+            <username>${env.NEXUS_LOGIN}</username>
+            <password>${env.NEXUS_PASSWORD}</password>
+        </server>
+        <server>
+            <id>maven-snapshots</id>
+            <username>${env.NEXUS_LOGIN}</username>
+            <password>${env.NEXUS_PASSWORD}</password>
         </server>
     </servers>
 </settings>
