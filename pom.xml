@@ -89,21 +89,20 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.1.1</version>
-        <configuration>
-          <appendAssemblyId>false</appendAssemblyId>
-          <descriptors>
-            <descriptor>assembly.xml</descriptor>
-          </descriptors>
-          <finalName>${project.artifactId}-${project.version}-distrib</finalName>
-        </configuration>
         <executions>
           <execution>
             <phase>package</phase>
             <goals>
               <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
+            <configuration>
+              <finalName>${project.artifactId}-${project.version}-distrib</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+              <descriptors>
+                <descriptor>assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          <execution>
+        <executions>
       </plugin>
     </plugins>
   </build>
