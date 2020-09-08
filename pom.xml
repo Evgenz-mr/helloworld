@@ -22,6 +22,24 @@
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
   </properties>
   
+  <profiles>
+        <profile>
+            <id>nexus-local</id>
+            <properties>
+            </properties>
+        <distributionManagement>
+            <repository>
+                <id>maven-releases</id>
+                <url>http://192.168.88.223:8081/nexus/repository/maven-releases/</url>
+            </repository>
+            <snapshotRepository>
+                <id>maven-snapshots</id>
+                <url>http://192.168.88.223:8081/nexus/repository/maven-snapshots/</url>
+            </snapshotRepository>
+        </distributionManagement>
+        </profile>
+    </profiles>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
