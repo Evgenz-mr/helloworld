@@ -97,6 +97,7 @@
             </goals>
             <configuration>
               <finalName>${project.artifactId}-${project.version}-distrib</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
