@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.coveros.demo</groupId>
-  <artifactId>helloworld-${project.version}-distrib</artifactId>
+  <artifactId>helloworld</artifactId>
   <version>1.7</version>
   <packaging>jar</packaging>
 
