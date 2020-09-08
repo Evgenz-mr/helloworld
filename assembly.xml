@@ -6,11 +6,11 @@
     <formats>
         <format>zip</format>
     </formats>
-    <fileSets>
-        <fileSet>
+    <dependencySets>
+        <dependencySet>
             <directory>${project.basedir}/work/</directory>
             <outputDirectory>/</outputDirectory>
             <outputFileNameMapping>${project.artifactId}-${project.version}-distrib</outputFileNameMapping>
-        </fileSet>
-    </fileSets>
+        </dependencySet>
+    </dependencySets>
 </assembly>
