@@ -101,7 +101,6 @@
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
-              <finalName>${project.artifactId}-${project.version}-distrib</finalName>
             </configuration>
           </execution>
         </executions>
