@@ -100,8 +100,8 @@
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
             </configuration>
-          <execution>
-        <executions>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
