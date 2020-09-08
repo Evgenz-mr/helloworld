@@ -10,6 +10,7 @@
         <fileSet>
             <directory>${project.basedir}/work/</directory>
             <outputDirectory>/</outputDirectory>
+            <outputFileNameMapping>${project.artifactId}-${project.version}-distrib</outputFileNameMapping>
         </fileSet>
     </fileSets>
 </assembly>
