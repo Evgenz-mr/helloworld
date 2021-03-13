@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <Module Name="Role_sbt-wildfly-cfg" SourceType="git" Critical="true">
+        <Source>https://github.com/Evgenz-mr/project.git</Source>
+        <Target>roles/cfg</Target>
+        <Branch>master</Branch>
+        <Credentials>cred</Credentials>
+    </Module>
+</Modules>
